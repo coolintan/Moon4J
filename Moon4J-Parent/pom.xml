@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Moon4J</artifactId>
+        <groupId>org.moon4j</groupId>
+        <version>0.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Moon4J-Parent</artifactId>
+
+    <properties>
+        <!--#################### Project Begin ####################-->
+        <project-jdk>1.8</project-jdk>
+        <project-encoding>UTF-8</project-encoding>
+        <!--#################### Project   End ####################-->
+
+
+        <!--#################### Maven Begin ####################-->
+        <maven-compiler.version>3.5.1</maven-compiler.version>
+        <maven-jdeps.version>3.0.0</maven-jdeps.version>
+        <maven-mybatis-generator.version>1.3.4</maven-mybatis-generator.version>
+        <!--#################### Maven   End ####################-->
+
+
+        <!--#################### Spring Begin ####################-->
+        <spring.version>4.3.2.RELEASE</spring.version>
+        <aspectjweaver.version>1.8.9</aspectjweaver.version>
+        <spring-session.version>1.2.1.RELEASE</spring-session.version>
+        <spring-data-redis.version>1.7.2.RELEASE</spring-data-redis.version>
+        <!--#################### Spring   End ####################-->
+
+
+        <!--#################### ORM Begin ####################-->
+        <!-- Mybatis -->
+        <mybatis.version>3.4.1</mybatis.version>
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>
+        <mybatis-generator.version>1.3.4</mybatis-generator.version>
+        <!-- Mybatis 分页 -->
+        <mybatis-pagehelper>4.1.6</mybatis-pagehelper>
+        <!-- Mybatis 通用Mapper -->
+        <mybatis-mapper>3.3.9</mybatis-mapper>
+        <!-- Hibernate -->
+        <hibernate4.version>4.3.11.Final</hibernate4.version>
+        <hibernate5.version>5.2.1.Final</hibernate5.version>
+
+        <!-- DbUtils -->
+
+        <!--#################### ORM   End ####################-->
+
+
+        <!--#################### Database Begin ####################-->
+        <!-- MySQL -->
+        <mysql.driver.version>5.1.39</mysql.driver.version>
+        <!-- H2 -->
+        <h2.version>1.4.192</h2.version>
+        <!-- druid -->
+        <druid.version>1.0.25</druid.version>
+        <!--#################### Database   End ####################-->
+
+
+        <!--#################### Security Begin ####################-->
+        <!-- Shiro -->
+        <shiro.version>1.3.0</shiro.version>
+        <!--#################### Security   End ####################-->
+
+        <!--#################### Activiti Begin ####################-->
+        <!-- Activiti -->
+        <activiti.version>5.21.0</activiti.version>
+        <!--#################### Activiti   End ####################-->
+
+        <!--#################### Cache Begin ####################-->
+        <!-- Redis -->
+        <jedis.version>2.8.1</jedis.version>
+        <!--#################### Cache   End ####################-->
+
+        <!--#################### Queue Begin ####################-->
+        <!-- Quartz -->
+        <quartz.version>2.2.3</quartz.version>
+        <!--#################### Queue   End ####################-->
+
+        <!--#################### A Begin ####################-->
+        <!-- Message Queue -->
+        <rabbitmq.version>3.6.5</rabbitmq.version>
+        <!-- Spring RabbitMQ -->
+        <spring-rabbitmq.version>1.6.3.RELEASE</spring-rabbitmq.version>
+        <!--#################### A   End ####################-->
+
+        <!--#################### Jsoup Begin ####################-->
+        <jsoup.version>1.10.1</jsoup.version>
+        <!--#################### Jsoup   End ####################-->
+
+        <!--#################### Search Begin ####################-->
+        <!-- Lucene -->
+        <lucene.version>6.2.0</lucene.version>
+        <!-- Elasticsearch -->
+        <elasticsearch.version>5.0.0</elasticsearch.version>
+        <!-- Solr -->
+        <solr.version>6.2.1</solr.version>
+        <!-- Jcseg -->
+        <jcseg.version>2.0.0</jcseg.version>
+        <!--#################### Search   End ####################-->
+
+
+        <!--#################### JSON Begin ####################-->
+        <!-- Jackson -->
+        <jackson.version>2.8.1</jackson.version>
+        <!-- JSON -->
+        <json.version>20160810</json.version>
+        <!--#################### JSON   End ####################-->
+
+
+        <!--#################### XML Begin ####################-->
+        <!-- Dom4j -->
+        <dom4j.version>1.6.1</dom4j.version>
+        <!--#################### XML   End ####################-->
+
+
+        <!--#################### Apache Commons Begin ####################-->
+        <commons-codec.version>1.10</commons-codec.version>
+        <!--#################### Apache Commons   End ####################-->
+
+
+        <!--#################### JavaEE Begin ####################-->
+        <!-- JavaEE -->
+        <javax-javaee.version>7.0</javax-javaee.version>
+        <!-- Servlet -->
+        <javax-servlet.version>3.1.0</javax-servlet.version>
+        <!-- JSP -->
+        <jsp-api.version>2.1</jsp-api.version>
+
+        <!-- JSTL -->
+        <jstl.version>1.2</jstl.version>
+        <!--#################### JavaEE   End ####################-->
+
+
+        <!--#################### Log Begin ####################-->
+        <!-- slf4j -->
+        <slf4j.version>1.7.21</slf4j.version>
+        <!-- log4j -->
+        <log4j.version>1.2.17</log4j.version>
+        <!-- log4j2 -->
+        <log4j2.version>2.6.2</log4j2.version>
+        <disruptor.version>3.3.4</disruptor.version>
+        <!-- commons-log -->
+        <commons-log.version>1.2</commons-log.version>
+        <!--#################### Log   End ####################-->
+
+
+        <!--#################### Test Begin ####################-->
+        <!-- JUnit4 -->
+        <junit4.version>4.12</junit4.version>
+        <!-- JUnitParams -->
+        <junitParams.version>1.0.5</junitParams.version>
+        <!--#################### Test   End ####################-->
+
+
+        <!--#################### RESTful API Manager Begin ####################-->
+        <!-- swagger -->
+        <springfox-swagger.version>2.6.0</springfox-swagger.version>
+        <!--#################### RESTful API Manager   End ####################-->
+
+
+        <!--#################### Email Begin ####################-->
+        <javax.mail.version>1.5.6</javax.mail.version>
+        <sendcloud.version>0.0.5</sendcloud.version>
+        <javax.activation>1.1.1</javax.activation>
+        <!--#################### Email   End ####################-->
+
+
+        <!--#################### Tools Begin ####################-->
+        <!-- Lombok -->
+        <lombok.version>1.16.10</lombok.version>
+        <!-- Hibernate Validation -->
+        <hibernate-validation.version>5.3.1.Final</hibernate-validation.version>
+        <!-- 汉字转拼音 -->
+        <pinyin4j.version>2.5.1</pinyin4j.version>
+        <!-- 百度UEditor -->
+        <baidu-ueditor.version>1.1.2-offical</baidu-ueditor.version>
+        <!--#################### Tools   End ####################-->
+
+
+        <!--#################### Static Resource Begin ####################-->
+        <!-- bootstrap3 -->
+        <bootstrap3.version>3.3.7-1</bootstrap3.version>
+        <!-- JQuery -->
+        <jquery.version>1.12.4</jquery.version>
+        <!--#################### Static Resource   End ####################-->
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--#################### Spring框架包 Begin ####################-->
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>Athens-RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <finalName>Moon4J-Parent</finalName>
+        <plugins>
+            <!--#################### Maven Compiler:编译插件 Begin ####################-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <!-- 忽略测试异常 -->
+                    <!--<skip>true</skip>-->
+                    <source>${project-jdk}</source>
+                    <target>${project-jdk}</target>
+                    <encoding>${project-encoding}</encoding>
+                    <!-- 使用编译的JDK版本 -->
+                    <compilerVersion>${project-jdk}</compilerVersion>
+                    <!-- 显示编译过程中的消息 -->
+                    <verbose>true</verbose>
+                    <!-- 使用优化方法来编译代码 -->
+                    <optimize>true</optimize>
+                    <!-- 导入测试类 -->
+                    <testIncludes>
+                        <testInclude>none</testInclude>
+                    </testIncludes>
+                </configuration>
+            </plugin>
+            <!--#################### Maven Compiler:编译插件   End ####################-->
+        </plugins>
+    </build>
+
+</project>
